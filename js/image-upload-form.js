@@ -115,14 +115,13 @@ const ohHashtagInput = () => {
 
 imgEditHashtagsInput.addEventListener('input', ohHashtagInput);
 
-const blockSubmitButton = () => {
-  imgEditSubmitButton.disabled = true;
-};
-
 const unblockSubmitButton = () => {
   document.querySelector('.img-upload__submit').disabled = false;
 };
 
+const blockSubmitButton = () => {
+  imgEditSubmitButton.disabled = true;
+};
 
 imgUploadForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
